@@ -1,12 +1,8 @@
 name: Analyse the Issue
-on: 
-  issues:
-    types:
-      - opened
-
+on: issues
 jobs:
   Print_Metadata:
     runs-on: ubuntu-latest
     steps: 
       - name: Write metadata
-        run: echo ${{toJSON(github.event)}}
+        run: echo "${{toJSON(github.event)}}"
