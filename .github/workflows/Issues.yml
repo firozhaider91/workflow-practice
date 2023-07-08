@@ -5,8 +5,8 @@ on:
       - opened
 
 jobs:
-  Print Metadata
-  runs-on: ubuntu-latest
-  steps: 
-    - name: Write metadata
-      run: echo ${{toJSON(github.event)}}
+  Print Metadata:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Write metadata
+        run: echo ${{toJSON(github.event)}}
