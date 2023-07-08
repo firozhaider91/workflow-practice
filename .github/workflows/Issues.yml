@@ -5,7 +5,7 @@ on:
       - opened
 
 jobs:
-  Print Metadata:
+  Print_Metadata:
     runs-on: ubuntu-latest
     steps: 
       - name: Write metadata
