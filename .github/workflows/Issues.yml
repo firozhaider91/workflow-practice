@@ -1,7 +1,8 @@
 name: Analyse the Issue
-on: issues
-  types:
-    - opened
+on: 
+  issues:
+    types:
+      - opened
 
 jobs:
   Print Metadata
